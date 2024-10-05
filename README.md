@@ -21,5 +21,29 @@ Para executar os testes, você precisará instalar as seguintes ferramentas:
 ### 1. Clonar o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/jjocara/rf_advantageonlineshopping.git
+cd rf_advantageonlineshopping
+
+### 2. Instalar as dependências:
+
+pip install -r requirements.txt
+
+Configurar o ChromeDriver
+
+## Execução dos Testes
+### Testes Web
+Para executar os testes web:
+robot tests/web_tests.robot
+
+### Testes de API
+Para executar os testes de API:
+robot tests/api_tests.robot
+
+
+## Dependências
+O arquivo requirements.txt contém todas as bibliotecas necessárias para a execução dos testes:
+robotframework==6.0
+robotframework-seleniumlibrary==6.0.0
+robotframework-requests==0.9.3
+selenium==4.10.0
+
